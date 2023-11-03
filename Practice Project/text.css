@@ -1,0 +1,39 @@
+p {
+    font-family: Roboto;
+  }
+
+  .video-style {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 5;
+  }
+
+  .video-stats {
+    font-size: 14px;
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .prac-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .span-example {
+    color: yellow;
+  }
+
+  .span-example:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
