@@ -1,76 +1,230 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Youtube Clone</title>
-      <style>
-        .thumbnail {
-          width: 300px;
-          display: block;
-        }
-        .search-bar {
-          display: block;
-          font-size: 20px;
-          margin-bottom: 30px;
-        }
-        .div-example {
-          display: block;
-        }
-        .video-preview {
-          width: 300px;
-          display: inline-block;
-          vertical-align: top;
-          margin-right: 15px;
-        }
-        .video-profile {
-          display: inline-block;
-          width: 50px;
-        }
-        .video-info {
-          display: inline-block;
-          width: 200px;
-        }
 
-      </style>
-    </head>
-    <body>
+<head>
+  <title>Youtube Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?
+      family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Styles/General.css">
+  <link rel="stylesheet" href="Styles/video.css">
+  <link rel="stylesheet" href="Styles/header.css">
+  <link rel="stylesheet" href="Styles/Sidebar.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="Icons/hamburger-menu.svg">
+      <img class="youtube-logo" src="Icons/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
       <input class="search-bar" type="text" placeholder="Search">
-      <div class="video-preview">
-      <div>
+      <button class="search-button">
+        <img class="search-icon" src="Icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <div class="tooltip">Search With Your Voice</div>
+        <img class="voice-search-icon" src="Icons/voice-search-icon.svg">
+      </button>
+    </div>
+    <div class="right-section"> 
+      <div class="upload-icon-container">
+        <div class="tooltip">Create</div>
+        <img class="upload-icon" src="Icons/upload.svg">
+      </div>
+     
+      <img class="youtube-icon" src="Icons/youtube-apps.svg">
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="Icons/notifications.svg">
+      <div class="notifications-count"> 3 </div>
+      </div>
+      <img class="current-user-icon" src="Profilepics/my-channel.jpeg">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-link">
+      <img src="Icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Icons/youtube-music.svg">
+      <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Icons/library.svg">
+      <div>Library</div>
+    </div>
+  </div>
+
+  <div class="video-grid">
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <div class="video-time">14:20</div>
         <img class="thumbnail" src="Thumbnails/Thumbnail 1.webp">
       </div>
-      <div>
-      <div class="video-profile">
-        <img src="Profilepics/profilepic 1.jpeg"> 
-      </div>
-      <div class="video-info">
-        <p class="video.title">
-          Mortal Kombat Video
-        </p>
-  
-        <p class="video-author">
-          Netherealm Games
-        </p>
-  
-        <p class="video-stats">
-          1.4m Views 
-        </p>
-       </div>
-       </div>
-       </div>
-       <div class="video-preview">
-          <img class="thumbnail" src="Thumbnails/Thumbnail 2.webp">
-  
-        <p class="video.title">
-          Five Nights At Freddys 
-        </p>
-  
-        <p class="video-author">
-          Scott games
-        </p>
-  
-        <p class="video-stats">
-          2.4m Views 
-        </p>
+      <div class="video-info-grid">
+        <div class="video-profile">
+          <img class="profile-picture" src="Profilepics/profilepic 1.jpeg">
         </div>
-    </body>
+        <div class="video-info">
+          <p class="video-title">
+            Mortal Kombat Video
+          </p>
+
+          <p class="video-author">
+            Netherealm Games
+          </p>
+
+          <p class="video-stats">
+            1.4m Views
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <div class="video-time">4:52</div>
+        <img class="thumbnail" src="Thumbnails/Thumbnail 2.webp">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="video-profile">
+          <img class="profile-picture" src="Profilepics/profilepic 1.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Five Nights At Freddys
+          </p>
+
+          <p class="video-author">
+            Scott Games
+          </p>
+
+          <p class="video-stats">
+            123k Views
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <div class="video-time">7:08</div>
+        <img class="thumbnail" src="Thumbnails/Thumbnail 3.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="video-profile">
+          <img class="profile-picture" src="Profilepics/ProfilePic 2.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Fnaf Movie Trailer
+          </p>
+
+          <p class="video-author">
+            InheritorStudios
+          </p>
+
+          <p class="video-stats">
+            23m Views
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <div class="video-time">23:09</div>
+        <img class="thumbnail" src="Thumbnails/Thumbnail 4.webp">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="video-profile">
+          <img class="profile-picture" src="Profilepics/ProfilePic 2.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            How Fnaf Lore Works
+          </p>
+
+          <p class="video-author">
+            Syhr Games
+          </p>
+
+          <p class="video-stats">
+            123k Views
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <div class="video-time">7:23</div>
+        <img class="thumbnail" src="Thumbnails/Thumbnail 5.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="video-profile">
+          <img class="profile-picture" src="Profilepics/ProfilePic 3.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Coding Asmr Video
+          </p>
+
+          <p class="video-author">
+            AsmrKeyboard
+          </p>
+
+          <p class="video-stats">
+            2.3m Views
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <div class="video-time">8:21</div>
+        <img class="thumbnail" src="Thumbnails/Thumbnail 6.webp">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="video-profile">
+          <img class="profile-picture" src="Profilepics/Profile Pic 4.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Minecraft Terraria Mod Looks Crazy
+          </p>
+
+          <p class="video-author">
+            Mojang
+          </p>
+
+          <p class="video-stats">
+            1.2m Views
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
