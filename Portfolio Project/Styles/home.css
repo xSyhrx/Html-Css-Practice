@@ -37,7 +37,7 @@
 }
 
 .highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
+  border-bottom: 5px solid rgb(115,200,169);
 }
 
 @media  screen and (max-width: 1100px) {
