@@ -8,7 +8,7 @@
 
 .main__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -22,6 +22,13 @@
 .main__content {
   color: #fff;
   width: 100%;
+  padding-right: 50px;
+}
+
+.main__content__2 {
+  color: #fff;
+  width: 100%;
+  padding-left: 50px;
 }
 
 .main__content h1 {
@@ -40,7 +47,7 @@
   font-size: 4rem;
   color: #fff;
   background: rgb(115,200,169);
-  background: linear-gradient(90deg, rgba(115,200,169,1) 0%, rgba(0,115,98,1) 100%);
+  background: linear-gradient(90deg, #73c8a9 0%, rgba(0,115,98,1) 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,6 +58,39 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.main__content__2 h1 {
+  font-size: 2rem;
+  background-color: #f0f0f0;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.main__content__2 h2 {
+  font-size: 4rem;
+  color: #fff;
+  background: rgb(115,200,169);
+  background: linear-gradient(90deg, #73c8a9 0%, rgba(0,115,98,1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content__2 p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.projects__page  .main__content, .projects__page .main__content__2 {
+  text-align: center;
 }
 
 .main__btn {
@@ -87,6 +127,10 @@
   background: rgb(16, 151, 99);
   transition: all 0.35s;
   border-radius: 4px;
+}
+
+.main__title__text {
+
 }
 
 .main__btn:hover {

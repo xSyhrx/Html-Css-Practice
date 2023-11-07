@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
       element.classList.remove('highlight')
     }
   }
-  
   window.addEventListener('scroll', highLightMenu)
   window.addEventListener('click', highLightMenu)
   
